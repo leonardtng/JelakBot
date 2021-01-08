@@ -5,13 +5,13 @@ from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters, Conv
 import requests
 import csv
 
+from credentials import TOKEN
+
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
 )
 
 logger = logging.getLogger(__name__)
-
-TOKEN = "XXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 LOCATION, RESTAURANT, ORDER_RESTAURANT, ORDER_LOCATION, CUTOFF, VIEW, ORDERS_LIST = range(7)
 

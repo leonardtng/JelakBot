@@ -1,3 +1,6 @@
+# credentials
+/credentials.py
+
 # csv data
 /orders_file.csv
 /user_file.csv
