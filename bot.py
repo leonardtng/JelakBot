@@ -83,7 +83,8 @@ def restaurant(update, context):
             else:
                 line_count += 1
 
-    update.message.reply_text(f"Restaurant saved as {update.message.text}", reply_markup=ReplyKeyboardRemove())
+    update.message.reply_text(f"Restaurant saved as {update.message.text}. JelakBot have remembered your preferences! "
+                              f"Use /order to make an order", reply_markup=ReplyKeyboardRemove())
 
     user_data["restaurants"] = update.message.text
 
